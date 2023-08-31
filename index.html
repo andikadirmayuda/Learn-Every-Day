@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar-nav">
+          <h1>LEARN</h1>
+        </div>
+        <div class="navbar-brand">
+          <a href="#project-html">Html</a>
+          <a href="#css">Css</a>
+          <a href="#javascript">JavaScript</a>
+        </div>
+        <div class="navbar-end">
+          <a href="#">=</a>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <img src="img/04.jpg" alt="" />
+          <h1>Andika Dirma Yuda</h1>
+          <p>- Learn Every Day -</p>
+        </div>
+      </div>
+    </header>
+    <section class="project-learn">
+      <div class="html" id="html">
+        <a href="#project-html">Html</a>
+      </div>
+      <div class="css" id="css">
+        <a href="#project-css">Css</a>
+      </div>
+      <div class="javascript" id="javascript">
+        <a href="#project-javascript">Java Script</a>
+      </div>
+      <button>STUDY NOW</button>
+    </section>
+
+    <section class="project-html" id="project-html">
+      <h1>HTML</h1>
+      <div class="isi-html">
+        <h2>Apa itu Html</h2>
+        <div class="tag">
+          <h2>Tag - tag Html</h2>
+          <ul>
+            <li>body</li>
+            <li>container</li>
+            <li>section</li>
+            <li>nav</li>
+            <li>header</li>
+            <li>fotter</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="project-css" id="project-css">
+      <h1>CSS</h1>
+      <div class="isi-css">
+        <h2>Selector</h2>
+      </div>
+    </section>
+    <section class="project-javascript" id="project-javascript">
+      <h1>JAVA SCRIPT</h1>
+      <div class="isi-javascript">
+        <div class="dom-selection">
+          <h2>DOM SELECTION</h2>
+          <ul>
+            <li><a href="#">Dom Tree</a></li>
+          </ul>
+          <h4>=> Parent - child</h4>
+        </div>
+        <h4 class="code-dom-selection">
+          // === DOM Selection Method ===== <br />
+          // 1. >>>> getElementById() <<<< <br />
+          --> Element <br />
+          const judul = document.getElementById("judul"); <br />
+          judul.style.backgroundColor = "salmon"; <br />
+          judul.innerHTML = "Andika"; <br />
+          <br />
+          // contoh lain <br />
+          sectionb = document.getElementById("b"); sectionb.innerHTML = "Yuda";
+          // 2. >>>> getElememtByTagName() <<<< --> HmtlColections const p =
+          document.getElementsByTagName("p"); for (let i = 0; i < p.length; i++)
+          { p[i].style.backgroundColor = "green"; } // contoh lain const h1 =
+          document.getElementsByTagName("h1")[0]; h1.style.fontSize = "50px"; //
+          3. >>>> getElementbyClassName() <<<< // --> HTMLColections const p3 =
+          document.getElementsByClassName("p3"); p3[0].innerHTML = "Teks js";
+          p3[0].style.backgroundColor = "salmon"; // 4. >>>> querySelector()
+          <<<< // => Element const p4 = document.querySelector("#b p");
+          p4.style.color = "green"; p4.style.fontSize = "40px"; // contoh lain
+          const li = document.querySelector("#b ul li:nth-child(2)");
+          li.style.backgroundColor = " salmon"; li.innerHTML = "Teks JS";
+          li.style.color = "blue"; // 5. >>>> querySelectorAll() <<<< // =>
+          NodeList const p = document.querySelectorAll("p");
+          p[1].style.backgroundColor = "orange";
+        </h4>
+        <div class="dom-manipulasi">
+          <h2>DOM MANIPULASI</h2>
+        </div>
+        <div class="dom-event">
+          <h2>DOM EVENT</h2>
+          <ul>
+            <li><a href="#">addEventListener</a></li>
+          </ul>
+        </div>
+        <div class="dom-travelsal">
+          <h2>DOM TRAVELSAL</h2>
+        </div>
+        <div class="dom-praventdefault">
+          <h2>DOM PRAVENT DEFAULT</h2>
+          <ul>
+            <li><a href="">object.preventDefault();</a></li>
+          </ul>
+        </div>
+        <div class="dom-bubbling">
+          <h2>DOM BUBBLING</h2>
+          <ul>
+            <li><a href="">object.stopPropaganation();</a></li>
+          </ul>
+          <h4>Code :</h4>
+          <h4 class="code">
+            cosnt close = document.querySelectorAll('.close'); <br />
+            close.forEach(function(el){ <br />
+            el.addEventListener('click', function(e){ <br />
+            e.parentElement.style.display = 'none' <br />
+            e.stopPropaganation(); <br />
+            }); <br />
+            });
+          </h4>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

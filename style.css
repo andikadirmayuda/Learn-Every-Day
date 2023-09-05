@@ -154,3 +154,15 @@ h4 {
 .dom-selection .code-dom-selection {
   color: bisque;
 }
+
+.project h1 {
+  text-align: center;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.project h3 {
+  text-align: center;
+}

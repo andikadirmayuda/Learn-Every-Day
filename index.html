@@ -70,38 +70,24 @@
     <section class="project-javascript" id="project-javascript">
       <h1>JAVA SCRIPT</h1>
       <div class="isi-javascript">
+        <div class="dom-tree">
+          <h2>DOM TREE</h2>
+          <ul>
+            <li><a href="#">Parent</a></li>
+            <li><a href="#">Child</a></li>
+          </ul>
+        </div>
+
         <div class="dom-selection">
           <h2>DOM SELECTION</h2>
           <ul>
-            <li><a href="#">Dom Tree</a></li>
+            <li><a href="">document.getElementById();</a></li>
+            <li><a href="">document.getElementByTagName();</a></li>
+            <li><a href="">document.getElementByClassName();</a></li>
+            <li><a href="">document.querySelector();</a></li>
+            <li><a href="">document.querySelectorAll();</a></li>
           </ul>
-          <h4>=> Parent - child</h4>
         </div>
-        <h4 class="code-dom-selection">
-          // === DOM Selection Method ===== <br />
-          // 1. >>>> getElementById() <<<< <br />
-          --> Element <br />
-          const judul = document.getElementById("judul"); <br />
-          judul.style.backgroundColor = "salmon"; <br />
-          judul.innerHTML = "Andika"; <br />
-          <br />
-          // contoh lain <br />
-          sectionb = document.getElementById("b"); sectionb.innerHTML = "Yuda";
-          // 2. >>>> getElememtByTagName() <<<< --> HmtlColections const p =
-          document.getElementsByTagName("p"); for (let i = 0; i < p.length; i++)
-          { p[i].style.backgroundColor = "green"; } // contoh lain const h1 =
-          document.getElementsByTagName("h1")[0]; h1.style.fontSize = "50px"; //
-          3. >>>> getElementbyClassName() <<<< // --> HTMLColections const p3 =
-          document.getElementsByClassName("p3"); p3[0].innerHTML = "Teks js";
-          p3[0].style.backgroundColor = "salmon"; // 4. >>>> querySelector()
-          <<<< // => Element const p4 = document.querySelector("#b p");
-          p4.style.color = "green"; p4.style.fontSize = "40px"; // contoh lain
-          const li = document.querySelector("#b ul li:nth-child(2)");
-          li.style.backgroundColor = " salmon"; li.innerHTML = "Teks JS";
-          li.style.color = "blue"; // 5. >>>> querySelectorAll() <<<< // =>
-          NodeList const p = document.querySelectorAll("p");
-          p[1].style.backgroundColor = "orange";
-        </h4>
         <div class="dom-manipulasi">
           <h2>DOM MANIPULASI</h2>
         </div>
@@ -136,6 +122,22 @@
             });
           </h4>
         </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <h1>PROJECT</h1>
+
+      <div class="Imagae Gallery">
+        <h3>- Image Gallery -</h3>
+
+        <img src="img/04.jpg" alt="" />
+      </div>
+    </section>
+    <section>
+      <div class="isi">
+        <h1>Project News</h1>
+        <div class="halo"></div>
       </div>
     </section>
     <script src="script.js"></script>
